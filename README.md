@@ -4,7 +4,7 @@ Development of a kit InovaDados
 Autor: Desenvolvimento do InovaDados,
 Atualizado em: 28 de Junho de 2014,	 
 Função:Kit de desenvolvimento,
-
+Locando como ROOT: su,
 ____________________________________________
 					  					  
    INSTALANDO O POSTGRESQL NO FEDORA    
@@ -20,6 +20,15 @@ postgresql-setup initdb
 
 systemctl start postgresql.service 
 systemctl enable postgresql.service
+
+____________________________________________
+					  					  
+   INSTALANDO O PGADMIN    
+____________________________________________
+
+yum install pgadmin3
+
+==============
 
 <strong>PRONTO! INSTALADO COM SUCESSO</strong>,
 
