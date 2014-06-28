@@ -19,5 +19,5 @@ postgresql-setup initdb
 
 systemctl start postgresql.service 
 systemctl enable postgresql.service
-<strong><h1>PRONTO! INSTALADO COM SUCESSO</strong></h1>
+<strong><h4>PRONTO! INSTALADO COM SUCESSO</strong></h4>
 =========================================== 
