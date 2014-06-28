@@ -1,36 +1,40 @@
 Development of a kit InovaDados
 ===========
 ------------------------------------------
-Autor: Desenvolvimento do InovaDados.
-Atualizado em: 28 de Junho de 2014. 
-Função:Kit de desenvolvimento.
-Logando como ROOT: su.
+- Autor: Desenvolvimento do InovaDados
+- Atualizado em: 28 de Junho de 2014
+- Função:Kit de desenvolvimento
+- Logando como ROOT: su
 
-____________________________________________
-					  					  
-   INSTALANDO O POSTGRESQL NO FEDORA    
-____________________________________________								          
 
-<strong>Para instalar digite no terminal:</strong>.
-yum install postgresql postgresql-server -y.
+```					  					  
+INSTALANDO O POSTGRESQL NO FEDORA    
+```
 
-<strong>Inicialize o cluster initdb:</strong>.
-postgresql-setup initdb.
+<strong>Para instalar digite no terminal:
+- yum install postgresql postgresql-server -y
 
-<strong>Coloque na inicialização e inicie o PostgreSQL:</strong>.
+<strong>Inicialize o cluster initdb:</strong>
+- postgresql-setup initdb.
 
-systemctl start postgresql.service. 
-systemctl enable postgresql.service.
+<strong>Coloque na inicialização e inicie o PostgreSQL:</strong>
 
-____________________________________________
-					  					  
+- systemctl start postgresql.service. 
+- systemctl enable postgresql.service.
+
+```					  					  
    INSTALANDO O PGADMIN    
-____________________________________________
+```
 
-yum install pgadmin3.
+-yum install pgadmin3.
+
+```					  					  
+CRIAR UM LOCAL HOST: Nevague até a pasta que deseja visualizar no seu localhost e digite os comandos a seguir:  
+```
+- php -S localhost:3000
 
 ==============
 
-<strong>PRONTO! INSTALADO COM SUCESSO</strong>.
+###PRONTO! INSTALADO COM SUCESSO
 
 Morra como herói ou viva o suficiente para se tornar o vilão!
