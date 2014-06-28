@@ -29,12 +29,12 @@ INSTALANDO O POSTGRESQL NO FEDORA
 -yum install pgadmin3.
 
 ```					  					  
-CRIAR UM LOCAL HOST: Nevague até a pasta que deseja visualizar no seu localhost e digite os comandos a seguir:  
+CRIANDO UM LOCALHOST: Nevague até a pasta que deseja visualizar no seu localhost e digite os comandos a seguir:  
 ```
 - php -S localhost:3000
 
 ==============
 
-###PRONTO! INSTALADO COM SUCESSO
+###PRONTO! INSTALADOS COM SUCESSO
 
 Morra como herói ou viva o suficiente para se tornar o vilão!
