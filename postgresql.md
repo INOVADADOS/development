@@ -64,5 +64,7 @@ su -c 'reindexdb --all' postgres
 <strong>Instalar executáveis</strong>
 - chmod a+x pgsqlmntn
 
+<strong>Adicionando postgresql para iniciar junto ao sistema</strong>
+- sudo chkconfig postgresql on
 <strong>Reiniciando o serviço do postgres</strong>
 - service postgresql reload
