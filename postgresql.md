@@ -3,10 +3,10 @@ INSTALANDO O POSTGRESQL NO FEDORA
 
 <strong>Se torne root</strong>
 <strong>Para instalar digite no terminal:
-- yum install postgresql-server
+- sudo yum install postgresql-server
 
 <strong>Uma vez instalado, vamos trocar a senha do usuário postgres</strong>
-- passwd postgres
+- sudo passwd postgres
 - digite a nova senha: ‘minhasenha’
 
 <strong>Feito isso, inicie a sua base de dados</strong>
@@ -24,7 +24,7 @@ Pulo do Gato \_(^⁻^)_/
 <strong>Se você não fizer o próximo passo, não conseguirá se conectar com o banco. 
 Agora que alteramos as configurações para que possamos nos conectar localmente, vamos alterar as configurações para autenticação no arquivo ‘pg_hba.conf’</strong>
 <strong>Navegue até o arquivo: </strong>
-nano /var/lib/pgsql/data/pg_hba.conf
+sudo nano /var/lib/pgsql/data/pg_hba.conf
 <strong>localize a linha: </strong>
 - host all all 127.0.0.1 ident
 <strong>substitua por: </strong>
