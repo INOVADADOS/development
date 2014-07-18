@@ -28,20 +28,10 @@ sudo nano /var/lib/pgsql/data/pg_hba.conf
 <strong>localize a linha: </strong>
 - host all all 127.0.0.1 ident
 <strong>substitua por: </strong>
-- host all all 127.0.0.1 md5
+- host all all 127.0.0.1 trust
 
 <strong>Inicie o serviço:</strong>
 - service postgresql start 
-
-===========
-<strong>Entre no postgres</strong>
-- su -l postgres
-
-<strong>Crie um banco de dados</strong>
-- createdb proesc
-
-<strong>Entre no banco de dados</strong>
-- psql proesc
 
 ```					  					  
    INSTALANDO O PGADMIN    
@@ -51,15 +41,6 @@ sudo nano /var/lib/pgsql/data/pg_hba.conf
 
 <strong>Instrumento de instalação de servidor</strong>
 - yum install postgresql-contrib
-
-<strong>Em seguida, execute o script adminpack.sql</strong>
-- su -l postgres$ psql --file /usr/share/pgsql/contrib/adminpack.sql
-
-<strong>Agendar tarefas de manutenção 
-Coloque o seguinte script em / etc / cron.daily / pgsqlmntn</strong>
-- !/bin/sh  
-su -c 'vacuumdb --all --full --analyze' postgres  
-su -c 'reindexdb --all' postgres
 
 <strong>Instalar executáveis</strong>
 - chmod a+x pgsqlmntn
